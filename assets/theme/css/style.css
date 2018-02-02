@@ -1008,12 +1008,10 @@ textArea.form-flat {
 
 .flat-nav-tabs {
   background: #332519;
-  padding: 10px 10px 0 10px;
+  padding: 10px 0 0 10px;
   border-top: 1px solid #332519;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  /* border-left: 1px solid #fffff7;
-  border-right: 1px solid #fffff7; */
 }
 .flat-nav-tabs > li > a {
   color: #6a0000;
@@ -1021,7 +1019,7 @@ textArea.form-flat {
   -moz-border-radius: 0 !important;
   -ms-border-radius: 0 !important;
   -o-border-radius: 0 !important;
-  border-radius: 0 !important;
+  /* border-radius: 10 !important; */
 }
 .flat-nav-tabs > li.active > a {
   box-shadow: 0 -2px 0 #332519 !important;
@@ -1715,6 +1713,8 @@ textArea.form-flat {
 .contact-area {
   position: relative;
   color: #fffdef;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .contact-area .form-contact-area {
@@ -1724,8 +1724,13 @@ textArea.form-flat {
 .contact-area .form-contact-area .inner-contact {
   background: #332519;
   clear: both;
-  /* width: 50%; */
-  padding: 55px 40px 40px 55px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 20%;
+  margin-top: 30px;
+  margin-bottom: 20px;  
+  padding: 30px 50px 50px 55px;
+  border-radius: 15px;
   /* float: center; */
 }
 @media (max-width: 1024px) {
