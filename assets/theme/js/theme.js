@@ -14,9 +14,9 @@
     initBtnFile();
     // initMap();
     initHold();
-    initCaptcha();
-    initAjaxContactForm();
-    initAjaxUploader();
+    // initCaptcha();
+    // initAjaxContactForm();
+    // initAjaxUploader();
   });
 
   //Run function When PACE (page loader) hide
