@@ -83,7 +83,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5,photo
 h6 {
   line-height: 1.2;
   font-family: 'Open Sans';
@@ -838,20 +838,22 @@ blockquote {
   -moz-box-shadow: none !important;
   -o-box-shadow: none !important;
   -ms-box-shadow: none !important;
-  -webkit-border-radius: 3px !important;
-  -moz-border-radius: 3px !important;
-  -ms-border-radius: 3px !important;
-  -o-border-radius: 3px  !important;
-  border-radius: 3px !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  -ms-border-radius: 2px !important;
+  -o-border-radius: 2px  !important;
+  border-radius: 2px !important;
   height: 45px;
   font-family: 'Open Sans';
-  border-color: #332519;
+  background-color: #fffdef;
+  border: #332519;
 }
 .form-control.form-flat.input-lg {
   height: 52px;
 }
 .form-control.form-flat:focus {
   border-color: #c3c3c3;
+    border-style:inset;
 }
 .form-control.form-flat.error {
   border-color: #afafaf;
@@ -1007,19 +1009,21 @@ textArea.form-flat {
 /*== TABS  ==*/
 
 .flat-nav-tabs {
-  background: #332519;
+  background: rgba(51, 37, 25, .1);
   padding: 10px 0 0 10px;
   border-top: 1px solid #332519;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 .flat-nav-tabs > li > a {
-  color: #6a0000;
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius: 0 !important;
-  -ms-border-radius: 0 !important;
-  -o-border-radius: 0 !important;
-  /* border-radius: 10 !important; */
+  font-style: bold;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  -ms-border-radius: 3px !important;
+  -o-border-radius: 3px !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important; 
+
 }
 .flat-nav-tabs > li.active > a {
   box-shadow: 0 -2px 0 #332519 !important;
@@ -1027,12 +1031,12 @@ textArea.form-flat {
   -moz-box-shadow: 0 -2px 0 #332519 !important;
   -o-box-shadow: 0 -2px 0 #332519 !important;
   -ms-box-shadow: 0 -2px 0 #332519 !important;
-  border: 1px sold white;
+  border: 3px 0px 3px 0px solid #332519;
 }
 .flat-tab-content {
   padding-top: 20px;
-  border-radius: 3px;
-  color: #fffdef;
+  border-radius: 10px;
+  border-top: #332519;
 }
 /*== CAROUSEL==*/
 .flat-carousel .carousel-control {
@@ -1187,7 +1191,7 @@ textArea.form-flat {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../images/me.jpg);
+  background-image: url(../images/mememe.png);
   position: absolute;
   left: 0;
   top: 0;
@@ -1460,11 +1464,12 @@ textArea.form-flat {
   margin-bottom: 30px;
   padding: 5px;
   background: #fffdef;
-  /* border: 1px solid #332519; */
   position: relative;
 }
 .box-work .work-preview {
   position: relative;
+  border: 8px ridge #efefef;
+   border-radius: 5px;
 }
 .box-work .work-preview img {
   width: 100%;
@@ -1541,7 +1546,6 @@ textArea.form-flat {
   margin-bottom: 30px;
   margin-top: 20px;
   position: relative;
-  /* border: 1px solid #fffff7; */
 }
 
 #photo1{
@@ -1576,7 +1580,7 @@ textArea.form-flat {
   bottom: 0;
   width: 50px;
   height: 50px;
-  font-size: 20px;
+  font-size: 03px;
   line-height: 50px;
   text-align: center;
   background: #fffff7;
@@ -1602,6 +1606,7 @@ textArea.form-flat {
   float: right;
   padding: 10px;
   margin-top: 100px;
+  text-align: center;  
 }
 .list-blog li:nth-child(even) .blog-bg {
   right: 0;
@@ -1613,6 +1618,7 @@ textArea.form-flat {
 }
 .list-blog li:nth-child(even) .blog-content {
   float: left;
+  text-align: center;
 }
 .list-blog li:hover .blog-bg:before {
   left: -100%;
@@ -1627,11 +1633,13 @@ textArea.form-flat {
   .list-blog li .box-blog .blog-content {
     width: 100%;
     float: none;
+      margin-top: 30px;
+    
   }
 }
 .post-meta {
   font-size: 12px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 5px groove #6a0000;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -1722,7 +1730,7 @@ textArea.form-flat {
   position: relative;
 }
 .contact-area .form-contact-area .inner-contact {
-  background: #332519;
+  background: rgba(51, 37, 25, .9);
   clear: both;
   width: 50%;
   margin-left: 25%;
@@ -1730,12 +1738,14 @@ textArea.form-flat {
   margin-top: 30px;
   margin-bottom: 20px;  
   padding: 30px 50px 50px 55px;
-  border-radius: 15px;
+  border-radius: 10px;
+    border: 5px double #fffdef;
   /* float: center; */
 }
 @media (max-width: 1024px) {
   .contact-area .form-contact-area {
     width: 100% !important;
+      border: 3px inset #332519;
   }
   .contact-area .form-contact-area .inner-contact {
     width: 100%;
@@ -1750,7 +1760,7 @@ textArea.form-flat {
   top: 0;
   height: 100%;
   border-left: 1px solid #ebebeb;
-  background: #f5f5f5;
+  background: #fffdef;
 }
 @media (max-width: 1024px) {
   .contact-area .map-area {
