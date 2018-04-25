@@ -1009,7 +1009,7 @@ textArea.form-flat {
 /*== TABS  ==*/
 
 .flat-nav-tabs {
-  background: rgba(51, 37, 25, .1);
+  background-color: rgba(51, 37, 25, .1);
   padding: 10px 0 0 10px;
   border-top: 1px solid #332519;
   border-top-left-radius: 10px;
@@ -1023,6 +1023,7 @@ textArea.form-flat {
   -o-border-radius: 3px !important;
   border-top-left-radius: 10px !important;
   border-top-right-radius: 10px !important; 
+  background-color: rgba(51,37,25,.1)
 
 }
 .flat-nav-tabs > li.active > a {
@@ -1032,11 +1033,14 @@ textArea.form-flat {
   -o-box-shadow: 0 -2px 0 #332519 !important;
   -ms-box-shadow: 0 -2px 0 #332519 !important;
   border: 3px 0px 3px 0px solid #332519;
+  background-color: rgba(51,37,25,.1);
 }
 .flat-tab-content {
   padding-top: 20px;
   border-radius: 10px;
   border-top: #332519;
+  background-color: rgba(51,37,25,.1);
+  
 }
 /*== CAROUSEL==*/
 .flat-carousel .carousel-control {
